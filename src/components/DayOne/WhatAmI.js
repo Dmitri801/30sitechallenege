@@ -2,7 +2,7 @@ import React from 'react'
 import SearchIcon from './SearchIcon'
 function WhatAmI() {
   return (
-    <section className="whatami">
+    <section id="what" className="whatami">
       <h1>What Am I?</h1>
       <div className="bottom-container">
         <p>

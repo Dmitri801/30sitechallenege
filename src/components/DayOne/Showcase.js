@@ -3,6 +3,7 @@ const meImg = require('../../images/me.jpg')
 function Showcase({ navBarOpen, mobile }) {
   return (
     <section
+      id="who"
       style={
         navBarOpen && mobile ? { marginTop: '200px', transition: '0.5s' } : {}
       }

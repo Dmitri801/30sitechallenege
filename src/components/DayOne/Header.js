@@ -1,5 +1,6 @@
 import React from 'react'
 import Hamburger from './MobileMenu/Hamburger'
+import { Link } from 'react-scroll'
 function Header({ toggleNavBar }) {
   return (
     <header className="navbar">
@@ -7,13 +8,19 @@ function Header({ toggleNavBar }) {
       <Hamburger toggleNavBar={toggleNavBar} />
       <ul className="navbar-nav">
         <li>
-          <a href="#!">Who</a>
+          <Link to="who" smooth={true}>
+            Who
+          </Link>
         </li>
         <li>
-          <a href="#!">What</a>
+          <Link to="what" smooth={true}>
+            What
+          </Link>
         </li>
         <li>
-          <a href="#!">Where</a>
+          <Link to="where" smooth={true}>
+            Where
+          </Link>
         </li>
       </ul>
     </header>

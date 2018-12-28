@@ -2,7 +2,7 @@ import React from 'react'
 
 function Where() {
   return (
-    <section className="where-container">
+    <section id="where" className="where-container">
       <h1>Where To Find Me?</h1>
       <div className="gallery">
         <div className="thumbnail one">
@@ -11,8 +11,8 @@ function Where() {
             accusantium alias necessitatibus in nobis rerum.
           </p>
           <img
-            src="https://images.pexels.com/photos/34140/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-            alt="computer"
+            src="https://images.unsplash.com/photo-1535025287458-e3badca98021?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+            alt="mountains"
           />
         </div>
         <div className="thumbnail two">
@@ -21,8 +21,8 @@ function Where() {
             accusantium alias necessitatibus in nobis rerum.
           </p>
           <img
-            src="https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-            alt="book"
+            src="https://images.unsplash.com/photo-1505275350441-83dcda8eeef5?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+            alt="coffee shop"
           />
         </div>
         <div className="thumbnail three">
@@ -31,8 +31,8 @@ function Where() {
             accusantium alias necessitatibus in nobis rerum.
           </p>
           <img
-            src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-            alt="Code"
+            src="https://images.unsplash.com/photo-1524103416206-a67f05a8154b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            alt="studio"
           />
         </div>
       </div>

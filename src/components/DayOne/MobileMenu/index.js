@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Link } from 'react-scroll'
 class Menu extends Component {
   render() {
     const { navBarOpen, mobile } = this.props
@@ -18,34 +18,37 @@ class Menu extends Component {
           className="side-nav"
         >
           <li>
-            <a
+            <Link
               style={
                 navBarOpen && mobile ? { opacity: 1, transition: 'all 2s' } : {}
               }
-              href="#!"
+              to="who"
+              smooth={true}
             >
               Who
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               style={
                 navBarOpen && mobile ? { opacity: 1, transition: 'all 2s' } : {}
               }
-              href="#!"
+              to="what"
+              smooth={true}
             >
               What
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               style={
                 navBarOpen && mobile ? { opacity: 1, transition: 'all 1s' } : {}
               }
-              href="#!"
+              to="where"
+              smooth={true}
             >
               Where
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

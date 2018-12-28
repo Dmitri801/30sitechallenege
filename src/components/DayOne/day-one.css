@@ -53,6 +53,7 @@ header h3 {
   text-decoration: none;
   color: #fff;
   letter-spacing: 5px;
+  cursor: pointer;
   transition: all 0.3s;
 }
 
@@ -66,15 +67,15 @@ header h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #efefef;
-  border: 1px solid #333;
+  background: #333;
+
   border-radius: 3px;
   cursor: pointer;
   display: none;
 }
 
 .hamburger-container:hover {
-  background: #e6e6e6;
+  background: #222;
 }
 
 .side-nav {
@@ -96,7 +97,7 @@ header h3 {
   text-decoration: none;
   color: #fff;
   letter-spacing: 5px;
-
+  cursor: pointer;
   opacity: 0;
 }
 

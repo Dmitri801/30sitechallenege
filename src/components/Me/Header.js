@@ -3,7 +3,7 @@ import Hamburger from './MobileMenu/Hamburger'
 import { Link } from 'react-scroll'
 function Header({ toggleNavBar }) {
   return (
-    <header className="navbar">
+    <header className="me-theme-header">
       <h3 className="nav-brand">Dmitriy's Lair</h3>
       <Hamburger toggleNavBar={toggleNavBar} />
       <ul className="navbar-nav">

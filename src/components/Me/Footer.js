@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 function Footer() {
   return (
-    <footer>
+    <footer className="me-footer">
       <p>Day One of the 30 day site challenge </p>
 
       <p>By Dmitriy Sharshiner</p>

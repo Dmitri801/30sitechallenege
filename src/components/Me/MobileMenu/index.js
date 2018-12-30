@@ -3,6 +3,7 @@ import { Link } from 'react-scroll'
 class Menu extends Component {
   render() {
     const { navBarOpen, mobile } = this.props
+
     return (
       <div>
         <ul

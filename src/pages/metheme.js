@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import SEO from '../components/Layout/seo'
 import Layout from '../components/Layout/layout'
-import Header from '../components/DayOne/Header'
-import Showcase from '../components/DayOne/Showcase'
-import WhatAmI from '../components/DayOne/WhatAmI'
-import Where from '../components/DayOne/Where'
-import MobileMenu from '../components/DayOne/MobileMenu'
-import Footer from '../components/DayOne/Footer'
-import '../components/DayOne/day-one.css'
-class DayOne extends Component {
+import Header from '../components/Me/Header'
+import Showcase from '../components/Me/Showcase'
+import WhatAmI from '../components/Me/WhatAmI'
+import Where from '../components/Me/Where'
+import MobileMenu from '../components/Me/MobileMenu'
+import Footer from '../components/Me/Footer'
+import '../components/Me/me.css'
+class Me extends Component {
   state = {
     mobile: false,
     navBarOpen: false,
@@ -17,13 +17,13 @@ class DayOne extends Component {
     if (window.innerWidth < 776) {
       this.setState({ mobile: true })
     } else {
-      this.setState({ mobile: false })
+      this.setState({ mobile: false, navBarOpen: false })
     }
     window.addEventListener('resize', () => {
       if (window.innerWidth < 776) {
         this.setState({ mobile: true })
       } else {
-        this.setState({ mobile: false })
+        this.setState({ mobile: false, navBarOpen: false })
       }
     })
   }
@@ -44,6 +44,7 @@ class DayOne extends Component {
         <div className="dayOne-body">
           <Header toggleNavBar={this.toggleNavBar} />
           <MobileMenu
+            toggleNavBar={this.toggleNavBar}
             navBarOpen={this.state.navBarOpen}
             mobile={this.state.mobile}
           />
@@ -60,4 +61,4 @@ class DayOne extends Component {
   }
 }
 
-export default DayOne
+export default Me
